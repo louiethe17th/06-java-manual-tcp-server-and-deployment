@@ -44,5 +44,6 @@ public class ConnectionHandler implements Runnable {
 
     public String listUsers (String line) {
         // TODO: implement list users
+        return "users";
     }
 }
