@@ -37,6 +37,8 @@ class TCPServer {
                 System.out.print("Waiting for connection... ");
                 Socket connectionSocket = welcomeSocket.accept();
 
+
+
                 User user = new User("unknown", connectionSocket);
 
                 ConnectionHandler connection = new ConnectionHandler(user);
