@@ -63,6 +63,19 @@ class TCPServer {
         return response;
     }
 
+    public static void message(String nickname, String message) {
+        for (User user : connections){
+            try {
+                if (user.nickname.equals((nickname))) {
+                    DataOutputStream outToClient = new DataOutputStream(user.socket.getOutputStream());
+                }
+            } catch (IOException e) {
+
+            }
+        }
+
+    }
+
     public static int getPort() {
         int defaultPort = 6789;
 

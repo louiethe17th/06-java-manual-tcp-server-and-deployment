@@ -1,7 +1,7 @@
 import java.net.Socket;
 import java.util.UUID;
 
-public class User {
+public class User{
     public String id;
     public String nickname;
     public Socket socket;
